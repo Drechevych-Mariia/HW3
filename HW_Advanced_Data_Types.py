@@ -57,9 +57,11 @@ print(dict_comp5)
 
 dict_comp6 = {}
 for x in range(10):
-    dict_comp6[x] = (x ** 3
-    if x ** 3 % 4 == 0
-else x)
+    dict_comp6[x] = (
+        x ** 3
+        if x ** 3 % 4 == 0
+        else x
+    )
 print(dict_comp6)
 
 x = 1
